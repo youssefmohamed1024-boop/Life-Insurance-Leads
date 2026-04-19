@@ -3,27 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SecureLife Quotes - Affordable Life Insurance Quotes in 60 Seconds</title>
-    <meta name="description" content="Compare life insurance quotes from top-rated insurers. Get affordable coverage with our easy online application. Licensed in all 50 states.">
+    <title>SecureLife Connect - Find Life Insurance Coverage That Protects Your Family's Future</title>
+    <meta name="description" content="Compare life insurance options from trusted providers. Secure quote process with licensed insurance professionals. Protect what matters most to your family.">
     
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="loading-text">SecureLife Connect</div>
+        </div>
+    </div>
+
     <!-- Header -->
-    <header class="main-header">
+    <header class="header" id="header">
         <nav class="navbar">
             <div class="container">
                 <div class="nav-brand">
-                    <h2>SecureLife Quotes</h2>
+                    <div class="brand-logo">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="brand-text">
+                        <span class="brand-name">SecureLife</span>
+                        <span class="brand-tagline">Connect</span>
+                    </div>
                 </div>
-                <ul class="nav-menu">
-                    <li><a href="#quote">Get Quote</a></li>
-                    <li><a href="pages/coverage-types.html">Coverage Types</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact" class="cta-nav">Contact</a></li>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#quote-form" class="nav-link">Get Quote</a></li>
+                    <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                    <li><a href="#why-choose" class="nav-link">Why Us</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#contact" class="nav-link contact-link">Contact</a></li>
                 </ul>
-                <div class="mobile-menu-toggle">
+                <div class="mobile-menu-toggle" id="mobileToggle">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -34,45 +52,28 @@
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Find Affordable Life Insurance in <span class="highlight">60 Seconds</span></h1>
-                    <p class="hero-subtitle">Compare quotes from America's top-rated insurers. No obligation, completely free.</p>
-                    
-                    <div class="trust-badges">
-                        <div class="trust-item">
-                            <span class="trust-icon">⭐</span>
-                            <span>A+ BBB Rating</span>
-                        </div>
-                        <div class="trust-item">
-                            <span class="trust-icon">🛡️</span>
-                            <span>Licensed in All 50 States</span>
-                        </div>
-                        <div class="trust-item">
-                            <span class="trust-icon">👥</span>
-                            <span>500,000+ Happy Customers</span>
-                        </div>
+                    <div class="hero-badge">
+                        <i class="fas fa-certificate"></i>
+                        <span>Trusted by Families Nationwide</span>
                     </div>
+                    <h1>Your Family's Financial Future <br><span class="highlight">Deserves Protection</span></h1>
+                    <p class="hero-subtitle">Compare personalized life insurance options from trusted providers. Our secure platform connects you with licensed insurance professionals who understand your unique needs.</p>
                     
-                    <a href="#quote-form" class="cta-button">Get Free Quote Now</a>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <div class="trust-indicators">
+                        <div class="trust-item">
+                            <div class="trust-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="trust
 
-    <!-- Quick Quote Form -->
-    <section id="quote-form" class="quote-section">
-        <div class="container">
-            <div class="quote-form-container">
-                <h2>Get Your Free Quote in 3 Easy Steps</h2>
-                <form class="quote-form" id="mainQuoteForm">
-                    <div class="form-step active" data-step="1">
-                        <h3>Step 1: Coverage Details</h3>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="coverageAmount">Coverage Amount</label>
-                                <select id="coverageAmount" name="coverageAmount" required>
-                                    <option value="">Select Amount</option>
-                                    <option value="100000">$100,000</option>
-                                    <option value="250000">$250,000
